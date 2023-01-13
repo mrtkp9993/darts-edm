@@ -1,12 +1,14 @@
 import pandas as pd
-from darts import TimeSeries
-from darts.models.forecasting.regression_model import RegressionModel
 
-from .src import *
+from src import *
 
 # Load your dataframe as df
-df = TimeSeries.from_dataframe(df)
+df = pd.read_csv("exampledata.csv", index_col=0)
+df.fillna(method="bfill", inplace=True)
 
 modelsimpl = SimplexPredictor()
 modelsimpl.fit(df)
-preds = modelsimpl.predict(fh) # fh is forecast horizon
+
+fh = 12
+preds = modelsimpl.predict(fh)  # fh is forecast horizon
+print(preds)
