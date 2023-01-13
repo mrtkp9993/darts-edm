@@ -1,4 +1,4 @@
-# darts-edm
+# sklearn-edm
 
 Empirical Dynamic Modeling
 
