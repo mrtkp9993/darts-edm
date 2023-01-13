@@ -1,5 +1,5 @@
 # darts-edm
 
-Empirical Dynamic Modeling with Darts
+Empirical Dynamic Modeling
 
 Example usage: '''example.py'''
